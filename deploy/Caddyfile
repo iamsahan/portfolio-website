@@ -1,7 +1,0 @@
-sahanweerakkody.me {
-    reverse_proxy 127.0.0.1:3006
-}
-
-os.sahanweerakkody.me {
-    reverse_proxy 127.0.0.1:3007
-}
