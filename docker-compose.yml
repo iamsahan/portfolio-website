@@ -1,0 +1,11 @@
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-website
+    restart: unless-stopped
+    ports:
+      - "3006:8080"
+    env_file:
+      - .env.production

@@ -1,0 +1,14 @@
+services:
+  caddy:
+    image: caddy:2
+    container_name: portfolio-caddy
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+
+volumes:
+  caddy_data:
+  caddy_config:
